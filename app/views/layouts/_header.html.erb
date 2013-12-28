@@ -1,0 +1,16 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container">
+            <%= link_to image_tag("logo.png", alt: "Sherman St. Hill Portfolio", id: "logo"), root_path %>
+            <nav class="top-nav">
+                <ul>
+                    <li><%= link_to "home",	root_path %></li>
+                    <li><%= link_to "about me",	about_path %></li>
+                    <li><%= link_to "resume", resume_path %></li>
+                    <li><%= link_to "projects",	projects_path %></li>
+                    <li><%= link_to "contact me", contact_path %></li>
+                </ul>
+            </nav>
+        </div> <!-- container -->
+    </div>
+</header><!-- /header -->

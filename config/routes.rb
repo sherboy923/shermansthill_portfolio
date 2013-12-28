@@ -1,9 +1,16 @@
 ShermansthillPortfolio::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/projects"
-  get "static_pages/resume"
-  get "static_pages/contact"
-  get "static_pages/about"
+  # get "static_pages/home"
+  # get "static_pages/projects"
+  # get "static_pages/resume"
+  # get "static_pages/contact"
+  # get "static_pages/about"
+
+  root 'static_pages#home'
+
+  match '/projects',  to: 'static_pages#projects',  via: 'get'
+  match '/resume',    to: 'static_pages#resume',    via: 'get'
+  match '/contact',   to: 'static_pages#contact',   via: 'get'
+  match '/about',     to: 'static_pages#about',     via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
