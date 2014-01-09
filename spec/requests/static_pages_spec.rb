@@ -1,8 +1,14 @@
 require 'spec_helper'
 
 describe "Static pages" do
+  
   subject { page }
-  let(:base_title) { "Sherman St. Hill Portfolio"}
+  let(:base_title) { "Sherman St. Hill Portfolio" }
+
+  shared_examples_for "all static pages" do
+    it { should have_selector('h1', text: heading) }
+    it { should have_title(full_title(page_title)) }
+  end
 
   describe "Home page" do
     before { visit root_path }
@@ -38,5 +44,18 @@ describe "Static pages" do
 
     it { should have_content('About Me') }
     it { should have_title("#{base_title} | About Me") }
+  end
+
+  it "should have the right links on the layout" do
+    visit root_path
+    click_link "about me"
+    expect(page).to have_title(full_title('About Me'))
+    click_link "resume"
+    expect(page).to have_title(full_title('Resume'))
+    click_link "contact me"
+    expect(page).to have_title(full_title('Contact Me'))
+    click_link "home"
+    click_link "projects"
+    expect(page).to have_title(full_title('My Projects'))
   end
 end

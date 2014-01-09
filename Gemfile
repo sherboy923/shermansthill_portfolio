@@ -4,6 +4,7 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 gem 'bootstrap-sass', '2.3.2.0'
+gem 'honeypot-captcha'
 
 group :development, :test do
 	gem 'sqlite3', '1.3.8'
@@ -19,6 +20,9 @@ group :test do
 	gem 'capybara', '2.1.0'
 	gem 'libnotify', '0.8.0'
 end
+
+# # Use pony to send emails from portfolio page
+# gem 'pony'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
