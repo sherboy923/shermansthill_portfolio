@@ -8,9 +8,10 @@ class InquiriesController < ApplicationController
         @inquiry = Inquiry.new(params[:inquiry])
 
         if @inquiry.valid?
-            InquiriesMailer.new_inquiry(@inquiry).deliver!
             flash[:success] = "Your email was successfully sent!"
-            redirect_to contact_path
+            # InquiriesMailer.new_inquiry(@inquiry).deliver!
+            
+            redirect_to contact_path #, :flash => { :success => "Your email was successfully sent!" }
         else
             render :new
         end
