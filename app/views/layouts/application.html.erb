@@ -10,6 +10,13 @@
 	<%= render 'layouts/shim' %>
 </head>
 <body>
+	<script type="text/javascript">
+		var RecaptchaOptions = {
+			theme : 'custom',
+			custom_theme_widget: 'recaptcha_widget'
+		};
+	</script>
+
 	<%= render 'layouts/header' %>
 	<div class="container wrapper">
 		<%= yield %>

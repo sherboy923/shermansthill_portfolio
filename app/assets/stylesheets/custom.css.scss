@@ -125,52 +125,6 @@ header {
 }
 
 /* contact form */
-// .form-group {
-// 	margin-bottom: 20px;
-// 	label {
-// 		margin-bottom: -15px;
-// 	}
-// 	input {
-// 		-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0 1px 1px inset;
-// 		box-shadow: rgba(0, 0, 0, 0.0745098) 0 1px 1px inset;
-// 		-webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-// 		border: 1px solid #CCC;
-// 		border-radius: 4px;
-// 		color: #555;
-// 		display: block;
-// 		font-size: 14px;
-// 		padding: 6px 12px;
-// 		transition:border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-// 		vertical-align:middle;
-// 		width:400px;
-// 		&:focus{
-// 			outline: none;
-// 			-webkit-box-shadow: 0 0 5px #34D0B6;
-// 			box-shadow: 0 0 5px #34D0B6;
-// 		}
-// 	}
-
-// 	textarea {
-// 		-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0 1px 1px inset;
-// 		box-shadow: rgba(0, 0, 0, 0.0745098) 0 1px 1px inset;
-// 		-webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-// 		border: 1px solid #CCC;
-// 		border-radius: 4px;
-// 		color: #555;
-// 		display: block;
-// 		font-size: 14px;
-// 		padding: 6px 12px;
-// 		transition:border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-// 		vertical-align:middle;
-// 		width:400px;
-// 		height: 200px;
-// 		&:focus{
-// 			outline: none;
-// 			-webkit-box-shadow: 0 0 5px #34D0B6;
-// 			box-shadow: 0 0 5px #34D0B6;
-// 		}
-// 	}
-// }
 
 .form-submit input {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -201,6 +155,34 @@ header {
 		background:-moz-linear-gradient( center top, #FF6800 5%, #FF8D40 100% );
 		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6800', endColorstr='#FF8D40');
 		background-color:#FF6800;
+	}
+}
+
+/* RECAPTCHA CUSTOM CSS */
+#recaptcha_image,
+#recaptcha_image img {
+	width: 200px !important;
+	cursor: pointer;
+}
+
+#recaptcha_image img:hover {
+	position: absolute;
+	width: 300px !important;
+}
+.recaptcha_only_if_image,
+.recaptcha_only_if_audio {
+	display: block;
+}
+
+.recaptcha_custom {
+	max-width: 350px;
+	padding: 10px;
+	-webkit-box-shadow: 4px 0px 13px -2px rgba(148,146,148,1);
+	-moz-box-shadow: 4px 0px 13px -2px rgba(148,146,148,1);
+	box-shadow: 4px 0px 13px -2px rgba(148,146,148,1);
+	p {
+		font-size: 0.75em;
+		color: #999;
 	}
 }
 

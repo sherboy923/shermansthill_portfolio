@@ -8,9 +8,11 @@ ShermansthillPortfolio::Application.routes.draw do
 
   match '/projects',  to: 'static_pages#projects',  via: 'get'
   match '/resume',    to: 'static_pages#resume',    via: 'get'
-  match '/contact',   to: 'inquiries#new',          via: 'get'
   match '/about',     to: 'static_pages#about',     via: 'get'
 
+  match '/contact',   to: 'inquiries#new',          via: 'get'
+  match '/contact',   to: 'inquiries#create',       via: 'post'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

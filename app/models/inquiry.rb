@@ -17,10 +17,6 @@ class Inquiry
 		attributes.each do |name, value|
 			send("#{name}=", value)			
 		end
-	end	
-
-	def deliver
-		false
 	end
 
 	def persisted?
