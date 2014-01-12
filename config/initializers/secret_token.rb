@@ -9,4 +9,5 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-ShermansthillPortfolio::Application.config.secret_key_base = '27d6a9b7d246316bd95af9d1d36a0a37690b419854ff0aa09f5a5e102fb40fa766bec286d7dfe7b07a3aac381ffad100bf806e84e36b7cc5722a20224a83dd40'
+ShermansthillPortfolio::Application.config.secret_key_base = ENV['SECRET_TOKEN']
+#'27d6a9b7d246316bd95af9d1d36a0a37690b419854ff0aa09f5a5e102fb40fa766bec286d7dfe7b07a3aac381ffad100bf806e84e36b7cc5722a20224a83dd40'

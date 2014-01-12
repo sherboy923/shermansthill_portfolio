@@ -15,3 +15,5 @@
 /log/*.log
 /tmp
 bundler_stubs/
+# Ignore application configuration
+/config/application.yml
