@@ -1,4 +1,7 @@
+//=======================================================================================
 @import "bootstrap";
+@import "fonts";
+//=======================================================================================
 
 /* universal */
 html {
@@ -7,6 +10,7 @@ html {
 
 body {
 	padding-top: 100px;
+	font-family: 'Abel', sans-serif !important;
 }
 
 section {
@@ -19,22 +23,26 @@ textarea {
 
 .center {
 	text-align: center;
-}
-
-.center h1 {
-	margin-bottom: 10px;
+	h1 {
+		margin-bottom: 5px;	
+		font-family: 'LeagueGothic' !important;
+		font-size: 5em !important;
+		letter-spacing: -2px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
 }
 
 /* typography */
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
+	font-family: 'Abel', sans-serif !important;
 }
 
 h1 {
-	font-size: 3em;
-	letter-spacing: -2px;
-	margin-bottom: 30px;
-	text-align: center;
+	font-family: 'LeagueGothic' !important;
+	font-size: 4em !important;
+
 }
 
 h2 {
@@ -80,6 +88,7 @@ header {
 		a {
 			color: #999;
 			font-size: 1.25em !important;
+			font-family: 'Abel', sans-serif;
 			font-weight: normal;
 			letter-spacing: -1px;
 			&:hover {
@@ -155,6 +164,12 @@ header {
 		background:-moz-linear-gradient( center top, #FF6800 5%, #FF8D40 100% );
 		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6800', endColorstr='#FF8D40');
 		background-color:#FF6800;
+	}
+}
+
+.form-group {
+	label {
+		font-size: 1.25em !important;
 	}
 }
 

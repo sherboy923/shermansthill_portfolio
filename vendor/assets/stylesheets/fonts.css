@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'LeagueGothic';
+	src: font-url('leaguegothic-regular.eot'); /* IE9 Compat Modes */
+	src: font-url('leaguegothic-regular.eot?#iefix') format('embedded-opentype'), 
+	font-url('leaguegothic-regular.woff') format('woff'),
+	font-url('leaguegothic-regular.ttf')  format('truetype'),
+	font-url('leaguegothic-regular.svg') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LeagueGothicItalic';
+	src: font-url('leaguegothic-italic.eot'); /* IE9 Compat Modes */
+	src: font-url('leaguegothic-italic.eot?#iefix') format('embedded-opentype'), 
+	font-url('leaguegothic-italic.woff') format('woff'),
+	font-url('leaguegothic-italic.ttf')  format('truetype'),
+	font-url('leaguegothic-italic.svg') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LeagueGothicCondensedItalic';
+	src: font-url('leaguegothic-condenseditalic.eot'); /* IE9 Compat Modes */
+	src: font-url('leaguegothic-condenseditalic.eot?#iefix') format('embedded-opentype'), 
+	font-url('leaguegothic-condenseditalic.woff') format('woff'),
+	font-url('leaguegothic-condenseditalic.ttf')  format('truetype'),
+	font-url('leaguegothic-condenseditalic.svg') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'LeagueGothicCondensedRegular';
+	src: font-url('leaguegothic-condensedregular.eot'); /* IE9 Compat Modes */
+	src: font-url('leaguegothic-condensedregular.eot?#iefix') format('embedded-opentype'), 
+	font-url('leaguegothic-condensedregular.woff') format('woff'),
+	font-url('leaguegothic-condensedregular.ttf')  format('truetype'),
+	font-url('leaguegothic-condensedregular.svg') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}
