@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'LeagueGothic';
-	src: url('/assets/leaguegothic-regular.eot'); /* IE9 Compat Modes */
-	src: url('/assets/leaguegothic-regular.eot?#iefix') format('embedded-opentype'), 
-	url('/assets/leaguegothic-regular.woff') format('woff'),
-	url('/assets/leaguegothic-regular.ttf')  format('truetype'),
-	url('/assets/leaguegothic-regular.svg') format('svg'); /* Legacy iOS */
+	src: font-url('leaguegothic-regular.eot'); /* IE9 Compat Modes */
+	src: font-url('leaguegothic-regular.eot?#iefix') format('embedded-opentype'), 
+	font-url('leaguegothic-regular.woff') format('woff'),
+	font-url('leaguegothic-regular.ttf')  format('truetype'),
+	font-url('leaguegothic-regular.svg') format('svg'); /* Legacy iOS */
 	font-weight: normal;
 	font-style: normal;
 }
