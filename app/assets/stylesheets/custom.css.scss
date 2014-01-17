@@ -9,7 +9,7 @@ html {
 
 body {
 	padding-top: 100px;
-	font-family: 'Abel', sans-serif !important;
+	font-family: 'Lato', sans-serif !important;
 }
 
 section {
@@ -36,7 +36,7 @@ textarea {
 /* typography */
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
-	font-family: 'Abel', sans-serif !important;
+	font-family: 'Lato', sans-serif !important;
 }
 
 h1 {
@@ -86,8 +86,8 @@ header {
 		margin: 0 -15px 0 0px;
 		a {
 			color: #999;
-			font-size: 1.5em !important;
-			font-family: 'Abel', sans-serif;
+			font-size: 1.313em !important;
+			font-family: 'Lato', sans-serif;
 			font-weight: normal;
 			letter-spacing: -1px;
 			&:hover {
@@ -124,18 +124,27 @@ header {
 		color: #999;
 		font-size: .938em;
 	}
-	.container {
+	.credits {
 		border-top: 1px solid #DDD;
 		padding-top: 10px;
 		padding-left: 10px;
 		line-height: 1;
+	}
+	.social-media-bar {
+		ul {
+			list-style: none;			
+			margin-right: 40px;
+			li {
+				display: inline-block;
+			}
+		}
 	}
 }
 
 /* contact form */
 
 .form-submit input {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'Lato',sans-serif;
 	width: auto;
 	cursor: pointer;
 	background-color: #363636;
