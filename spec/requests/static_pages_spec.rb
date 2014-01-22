@@ -13,7 +13,7 @@ describe "Static pages" do
   describe "Home page" do
     before { visit root_path }
 
-    it { should have_content('Sherman St. Hill Portfolio') }
+    it { should have_content('Sherman St. Hill') }
     it { should have_title("Sherman St. Hill Portfolio") }
     it { should_not have_title('| Home') }
   end

@@ -22,7 +22,11 @@ textarea {
 
 .center {
 	text-align: center;
+}
+
+.home_page {
 	h1 {
+		//text-shadow: -1.5px -1.5px #666, 1.5px 1.5px #FFF;
 		margin-bottom: 5px;	
 		font-family: 'Oswald', sans-serif !important;
 		font-weight: bold;
@@ -212,5 +216,13 @@ header {
 
 /* container */
 .wrapper {
-	margin-bottom: 100px;
+	margin-bottom: 50px;
+}
+
+/* home page */
+.profile_pic {
+	padding-bottom: 10px;
+	img {
+		border-radius: 6px;
+	}
 }
