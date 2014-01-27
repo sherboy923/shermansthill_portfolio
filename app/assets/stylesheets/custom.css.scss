@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-family: 'Oswald', sans-serif !important;
-	font-size: 4em !important;
+	// font-size: 4em !important;
 }
 
 h2 {
@@ -224,5 +224,19 @@ header {
 	padding-bottom: 10px;
 	img {
 		border-radius: 6px;
+	}
+}
+
+/* resume page */
+.resume_content {
+	border-left: 1.5px dashed #DDD;
+	h4 {
+		font-family: 'Oswald', sans-serif !important;
+	}
+}
+
+.resume_header {
+	h3 {
+		font-family: 'Oswald', sans-serif !important;
 	}
 }
