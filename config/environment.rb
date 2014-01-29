@@ -15,3 +15,5 @@ ActionMailer::Base.smtp_settings = {
 	:domain         => 'heroku.com',
 	:enable_starttls_auto => true
 }
+
+APP_CONFIG = YAML.load_file("#{Rails.root}/config/config.yml")
