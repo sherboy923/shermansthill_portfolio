@@ -10,7 +10,7 @@ class InquiriesController < ApplicationController
         if verify_recaptcha
             if @inquiry.valid?
                 flash[:success] = "Your email was successfully sent!"                
-                # InquiriesMailer.new_inquiry(@inquiry).deliver!
+                InquiriesMailer.new_inquiry(@inquiry).deliver!
 
                 redirect_to contact_path #, :flash => { :success => "Your email was successfully sent!" }
             else
