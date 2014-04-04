@@ -1,25 +1,27 @@
-<nav class="navbar navbar-fixed-top navbar-inverse navbar-default" role="navigation">
-<div class="container">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-menu-1">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <%= link_to image_tag("logo.png", alt: "Sherman St. Hill Portfolio", id: "logo"), root_path %>
-  </div>
+<header class="navbar navbar-fixed-top navbar-inverse navbar-default" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navigation-menu-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to image_tag("logo.png", alt: "Sherman St. Hill Portfolio", id: "logo"), root_path %>
+    </div>
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="navigation-menu-1">
-    <ul class="nav navbar-nav navbar-right">
-      <%= nav_link "home", root_path %>
-      <%= nav_link "about me", about_path %>
-      <%= nav_link "resume", resume_path %>
-      <%= nav_link "projects", projects_path %>
-      <%= nav_link "contact me", contact_path %>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-  </div><!-- container -->
-</nav>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <nav class="collapse navbar-collapse navigation-menu-1" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <%= nav_link "home", root_path %>
+        <%= nav_link "about me", about_path %>
+        <%= nav_link "resume", resume_path %>
+        <%= nav_link "projects", projects_path %>
+        <%= nav_link "contact me", contact_path %>
+      </ul>
+    </nav><!-- /.navbar-collapse -->
+  </div>
+</header>
+
+
 
