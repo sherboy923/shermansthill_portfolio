@@ -64,25 +64,19 @@ header {
 	height: 64px;
 }
 
-.navbar-inner {
-	height: 80px;
-}
-
 .navigation-menu-1 {
-	margin-top: 25px;
-	li {
-		//float: right;
-		//margin: 0 -15px 0 0px;
-		a {
-			color: #999;
-			font-size: 1.313em !important;
-			font-family: 'Lato', sans-serif;
-			font-weight: normal;
-			letter-spacing: -1px;
-			&:hover {
-				color: #FF6800 !important;
-				text-shadow:0 0 1px #FFA05F !important;
-			}
+	.navbar-right {
+		margin-top: 25px;
+	}
+	li a {
+		color: #999;
+		font-size: 1.313em !important;
+		font-family: 'Lato', sans-serif;
+		font-weight: normal;
+		letter-spacing: -1px;
+		&:hover {
+			color: #FF6800 !important;
+			text-shadow:0 0 1px #FFA05F !important;
 		}
 	}
 }
