@@ -1,22 +1,23 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.4'
+gem 'rails', '5.1.6'
 gem 'bootstrap-sass'
-gem 'recaptcha', :require => "recaptcha/rails"
+gem 'recaptcha', :require => 'recaptcha/rails'
 
 gem "brakeman", :require => false
 gem 'figaro'
 gem 'newrelic_rpm'
 
 group :development, :test do
-	gem 'sqlite3', '1.3.8'
-	gem 'rspec-rails', '2.13.1'
-	gem 'guard-rspec', '2.5.0'
-	gem 'spork-rails', '4.0.0'
-	gem 'guard-spork', '1.5.0'
-	gem 'childprocess', '0.3.9'
+	gem 'sqlite3',       '1.3.13'
+	gem 'rspec-rails',   '~> 3.6'
+	# gem 'guard-rspec'
+	gem 'spork'
+	# gem 'guard-spork',   '1.5.0'
+	gem 'childprocess',  '0.3.9'
+  gem 'byebug',        '9.0.6', platform: :mri
 end
 
 group :test do
@@ -32,25 +33,25 @@ end
 #gem 'sqlite3'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '5.0.6'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '3.2.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '4.2.2'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '4.3.1'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '5.0.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder', '~> 2.7.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -58,7 +59,7 @@ group :doc do
 end
 
 group :production do
-	gem 'pg', '0.15.1'
+	gem 'pg', '0.18.4'
 	gem 'rails_12factor', '0.0.2'
 end
 
