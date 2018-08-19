@@ -9,9 +9,9 @@ gem 'recaptcha', :require => 'recaptcha/rails'
 gem "brakeman", :require => false
 gem 'figaro'
 gem 'newrelic_rpm'
-# gem 'rubyzip', '>= 1.0.0'
 gem 'zip'
 gem 'docx_replace'
+gem 'rubyzip', :require => 'zip'
 
 group :development, :test do
 	gem 'sqlite3',       '1.3.13'
